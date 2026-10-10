@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+    margin: 0;
+}
+
+.contribution-scroll {
+  container-type: inline-size;
+}
+
+.contribution-scroll.profile-cursor-active,
+.contribution-scroll.profile-cursor-active * {
+  cursor: none;
+}
+
+.contribution-grid {
+  --contribution-cell-size: calc((max(100cqw, 690px) - 160px) / 53);
+  display: grid;
+  grid-template-columns: repeat(53, var(--contribution-cell-size));
+  grid-template-rows: repeat(7, var(--contribution-cell-size)) 16px;
+  gap: 3px;
+  min-width: 690px;
+  width: 100%;
+  padding: 2px;
+}

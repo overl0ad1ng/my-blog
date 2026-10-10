@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "articles": {
+    "count": 4,
+    "hashes": {
+      "index.mdx": "e9c8d1cecba729538e33d3ad592874d66acbbebb8a825af9a75d96e952177cf0",
+      "projects/code-altas.mdx": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "projects/index.mdx": "3289d2f40bf1583bb4c3f41adcf4382fbe3a0cb0dc95cacd1c96d92be3b7ec1c",
+      "projects/reverie.mdx": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "wordCounts": {
+      "index.mdx": 42,
+      "projects/code-altas.mdx": 0,
+      "projects/index.mdx": 0,
+      "projects/reverie.mdx": 0
+    },
+    "words": 42
+  },
+  "projects": 2,
+  "streak": {
+    "current": 1,
+    "longest": 9,
+    "asOf": "2026-10-10"
+  }
+}
