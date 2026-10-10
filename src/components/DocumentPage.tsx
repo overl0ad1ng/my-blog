@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { connection } from "next/server";
 import * as runtime from "react/jsx-runtime";
 import { compileDoc, getDocBySlug } from "@/lib/content";
+import { DocumentDates } from "./DocumentDates";
 import { mdxComponents } from "./mdx/mdx-components";
 
 export async function DocumentPage({ slug = [] }: { slug?: string[] }) {
@@ -16,6 +17,7 @@ export async function DocumentPage({ slug = [] }: { slug?: string[] }) {
   return (
     <article aria-label={doc.title} className="mx-auto max-w-3xl pb-24 break-words">
       <Content components={mdxComponents} />
+      <DocumentDates dates={doc.dates} />
     </article>
   );
 }

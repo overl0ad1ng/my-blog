@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   outputFileTracingIncludes: {
-    "/*": ["./src/content/**/*.mdx", "./src/content/data.json"],
+    "/*": ["./src/content/**/*.mdx", "./src/content/data.json", "./src/content/document-dates.json"],
   },
   turbopack: {
     rules: {

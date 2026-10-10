@@ -46,3 +46,7 @@ next-env.d.ts
 # Transient profile snapshot writes (keep data.json tracked).
 /src/content/data.json.lock
 /src/content/data.json.*.tmp
+
+# Generated article dates and atomic snapshot writes.
+/src/content/document-dates.json
+/src/content/document-dates.json.*.tmp

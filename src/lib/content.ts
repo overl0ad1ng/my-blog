@@ -2,6 +2,7 @@ import "server-only";
 
 import { readFile } from "node:fs/promises";
 import path from "node:path";
+import { getDocumentDatesDataPath, readDocumentDatesSnapshot } from "./document-dates";
 import { getHref, isValidSegment, resolveAsideConfig } from "./navigation";
 import { remarkJoinCjkLines } from "./remark-join-cjk-lines";
 
@@ -27,13 +28,18 @@ async function readDocBySlug(slug: string[]) {
   const filename = path.resolve(contentRoot, entry.file);
   const relative = path.relative(contentRoot, filename);
   if (relative === ".." || relative.startsWith(`..${path.sep}`) || path.isAbsolute(relative)) return null;
+  let source: string;
   try {
-    const source = await readFile(filename, "utf8");
-    return { ...entry, source };
+    source = await readFile(filename, "utf8");
   } catch (error) {
     if (error instanceof Error && "code" in error && (error.code === "ENOENT" || error.code === "ENOTDIR")) return null;
     throw error;
   }
+
+  const dates = slug[0] === "blog"
+    ? (await readDocumentDatesSnapshot(getDocumentDatesDataPath()))[entry.file]
+    : undefined;
+  return { ...entry, source, dates };
 }
 
 export async function compileDoc(source: string) {

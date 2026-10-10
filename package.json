@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "stats": "tsx scripts/stats.mts",
-    "dev": "pnpm stats --development && next dev",
-    "build": "pnpm stats --production && next build",
+    "document-dates": "tsx scripts/document-dates.mts",
+    "dev": "pnpm document-dates && pnpm stats --development && next dev",
+    "build": "pnpm document-dates && pnpm stats --production && next build",
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit"
