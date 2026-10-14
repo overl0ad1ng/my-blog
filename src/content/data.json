@@ -1,8 +1,9 @@
 {
   "version": 1,
   "articles": {
-    "count": 6,
+    "count": 7,
     "hashes": {
+      "blog/aoci.mdx": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "blog/teach-ai-how-to-coding.mdx": "73796d1eae2cdcf38148d47c720581b60a641088fd7b8cda1d01b289310efa6f",
       "index.mdx": "dca739eb505b54fab6e1e16e77ab694cad6381c80a1ef12679a7c05de1e90c1c",
       "projects/code-altas.mdx": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -11,6 +12,7 @@
       "projects/reverie.mdx": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     "wordCounts": {
+      "blog/aoci.mdx": 0,
       "blog/teach-ai-how-to-coding.mdx": 2967,
       "index.mdx": 150,
       "projects/code-altas.mdx": 0,
@@ -22,8 +24,8 @@
   },
   "projects": 3,
   "streak": {
-    "current": 2,
+    "current": 1,
     "longest": 9,
-    "asOf": "2026-10-10"
+    "asOf": "2026-10-14"
   }
 }

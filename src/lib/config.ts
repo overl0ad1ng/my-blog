@@ -50,6 +50,10 @@ export const ASIDE_CONFIG: AsideConfig[] = [
     label: "Blog",
     slug: "blog",
     children: [
+    {
+        title: "AOCI",
+        slug: "aoci"
+      },
       {
         title: "教 Ai 如何写代码",
         slug: "teach-ai-how-to-coding"

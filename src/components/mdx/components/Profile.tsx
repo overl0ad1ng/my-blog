@@ -6,6 +6,7 @@ import { getProfileStats } from "@/lib/profile-stats"
 import { formatProfileNumber } from "@/lib/profile-stats-data"
 import { Mailbox } from "reicon-react";
 import Link from "next/link"
+import { SiX } from "@icons-pack/react-simple-icons";
 
 const skills = [
   ["TypeScript", "#3178C6"],
@@ -51,6 +52,10 @@ export default async function Profile() {
     {
       icon: <Mailbox />,
       href: "mailto:hi@overl0ad1ng.com",
+    },
+    {
+      icon: <SiX size={20} />,
+      href: "https://x.com/kyomu520",
     },
   ]
 
@@ -119,7 +124,7 @@ export default async function Profile() {
             Connection
           </p>
         </div>
-        <div className="mt-4 bg-white/3 w-full p-2 rounded-2xl">
+        <div className="mt-4 bg-white/3 flex items-center gap-2 w-full p-2 rounded-2xl">
           {contacts.map((c) => (
             <Link key={c.href} className="size-14 bg-neutral-800 hover:bg-neutral-800/60 text-neutral-200 duration-200 ease-out rounded-xl flex items-center justify-center" href={c.href}>
               {c.icon}
