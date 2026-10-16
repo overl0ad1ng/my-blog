@@ -1,9 +1,10 @@
 {
   "version": 1,
   "articles": {
-    "count": 7,
+    "count": 8,
     "hashes": {
-      "blog/aoci.mdx": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "blog/aoci.mdx": "76bc81afecb0faf545703f2dbe60fa056d36e7bdd518beaaa29b25d55d035a30",
+      "blog/chatgpt-auth.mdx": "0f925bd36cdd1e679ede9e937bf118d704ec15cb4f07ae4a5c5497fc5d8673bd",
       "blog/teach-ai-how-to-coding.mdx": "73796d1eae2cdcf38148d47c720581b60a641088fd7b8cda1d01b289310efa6f",
       "index.mdx": "dca739eb505b54fab6e1e16e77ab694cad6381c80a1ef12679a7c05de1e90c1c",
       "projects/code-altas.mdx": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -12,7 +13,8 @@
       "projects/reverie.mdx": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     "wordCounts": {
-      "blog/aoci.mdx": 0,
+      "blog/aoci.mdx": 508,
+      "blog/chatgpt-auth.mdx": 1831,
       "blog/teach-ai-how-to-coding.mdx": 2967,
       "index.mdx": 150,
       "projects/code-altas.mdx": 0,
@@ -20,12 +22,12 @@
       "projects/reverie-pixel.mdx": 0,
       "projects/reverie.mdx": 0
     },
-    "words": 3117
+    "words": 5456
   },
   "projects": 3,
   "streak": {
-    "current": 1,
+    "current": 4,
     "longest": 9,
-    "asOf": "2026-10-14"
+    "asOf": "2026-10-16"
   }
 }

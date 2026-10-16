@@ -50,7 +50,11 @@ export const ASIDE_CONFIG: AsideConfig[] = [
     label: "Blog",
     slug: "blog",
     children: [
-    {
+      {
+        title: "ChatGPT Auth 的坑",
+        slug: "chatgpt-auth"
+      },
+      {
         title: "AOCI",
         slug: "aoci"
       },
